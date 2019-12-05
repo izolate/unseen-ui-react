@@ -1,0 +1,36 @@
+{
+  "name": "unseen-ui-react",
+  "version": "1.0.0",
+  "description": "React components for Unseen UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izolate/unseen-ui-react.git"
+  },
+  "keywords": [
+    "unseen",
+    "unseen-ui",
+    "react",
+    "ui-kit",
+    "uikit",
+    "components"
+  ],
+  "author": "izolate <izolate@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/izolate/unseen-ui-react/issues"
+  },
+  "homepage": "https://github.com/izolate/unseen-ui-react#readme",
+  "peerDependencies": {
+    "prop-types": "15.x",
+    "react": "16.x"
+  },
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
