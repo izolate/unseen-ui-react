@@ -1,2 +1,2 @@
 # unseen-ui-react
-React components for Unseen UI
+React components for Unseen UI (Work In Progress)
