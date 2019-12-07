@@ -4,10 +4,10 @@
   --button-border-color: var(--border-color);
   --button-border-width: var(--control-border-width);
   --button-border-radius: var(--control-border-radius);
-  --button-padding-x: 1em;
+  --button-padding-x: calc(2em - var(--control-border-width));
   --button-padding-y: calc(0.5em - var(--button-border-width));
   --button-font-family: var(--font-family);
-  --button-font-weight: 700;
+  --button-font-weight: var(--control-font-weight);
 
   background-color: var(--button-background-color);
   border-color: var(--button-border-color);
@@ -31,17 +31,39 @@
   width: 100%;
 }
 
-.button.is-rounded {
-  --button-border-radius: var(--border-radius-r0unded);
-}
-
-.button.is-outlined {
+.button.is-primary {
+  --button-background-color: var(--color-primary);
   --button-border-color: var(--color-primary);
   --button-color: var(--color-primary);
 }
 
+.button.is-success {
+  --button-background-color: var(--color-success);
+  --button-border-color: var(--color-success);
+  --button-color: var(--color-success);
+}
+
+.button.is-warning {
+  --button-background-color: var(--color-warning);
+  --button-border-color: var(--color-warning);
+  /* Warning color is too light for white text */
+  --button-color: var(--color-warning-text) !important;
+}
+
+.button.is-danger {
+  --button-background-color: var(--color-danger);
+  --button-border-color: var(--color-danger);
+  --button-color: var(--color-danger);
+}
+
+.button.is-rounded {
+  --button-border-radius: var(--border-radius-rounded);
+}
+
 .button.is-filled {
-  --button-background-color: var(--color-primary);
-  --button-border-color: var(--color-primary);
   --button-color: var(--color-white);
+}
+
+.button.is-outlined {
+  --button-background-color: var(--color-white);
 }

@@ -9,14 +9,31 @@
     <link rel="stylesheet" href="build/unseen.css" />
   </head>
   <body>
-    <div class="buttons" style="margin: 1.5em 3em">
-      <button type="button" class="control button">Empty</button>
-      <button type="button" class="control button is-outlined">Cancel</button>
-      <button type="button" class="control button is-filled">Accept terms</button>
+    <div>
+      <label>Email</label>
+      <input type="email" class="control input" placeholder="Search for titles" />
     </div>
     <div class="buttons" style="margin: 1.5em 3em">
+      <button type="button" class="control button" disabled>Disabled</button>
+      <button type="button" class="control button">Empty</button>
+      <button type="button" class="control button is-primary is-outlined">Cancel</button>
+      <button type="button" class="control button is-primary is-filled">Accept terms</button>
+    </div>
+    <div class="buttons" style="margin: 1.5em 3em">
+      <button type="button" class="control button is-rounded" disabled>Disabled</button>
       <button type="button" class="control button is-rounded">Empty</button>
-      <button type="button" class="control button is-outlined is-rounded">Cancel</button>
-      <button type="button" class="control button is-filled is-rounded is-rounded">Accept terms</button>
+      <button type="button" class="control button is-primary is-outlined is-rounded">Cancel</button>
+      <button type="button" class="control button is-primary is-filled is-rounded">Accept terms</button>
+    </div>
+    <div class="buttons" style="margin: 1.5em 3em">
+      <button type="button" class="control button is-primary is-filled is-rounded is-full-width">Load more</button>
+    </div>
+    <div class="buttons" style="margin: 1.5em 3em">
+      <button type="button" class="control button is-rounded is-outlined is-success">Success</button>
+      <button type="button" class="control button is-filled is-rounded is-success">Success</button>
+      <button type="button" class="control button is-rounded is-outlined is-warning">Warning</button>
+      <button type="button" class="control button is-filled is-rounded is-warning">Warning</button>
+      <button type="button" class="control button is-rounded is-outlined is-danger">Danger</button>
+      <button type="button" class="control button is-filled is-rounded is-danger">Danger</button>
     </div>
 </html>
