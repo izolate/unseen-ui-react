@@ -7,8 +7,9 @@
   --control-line-height: 1.5;
   --control-padding-x: calc(0.75em - var(--control-border-width));
   --control-padding-y: calc(0.75em - var(--control-border-width));
-  --control-background-color: hsl(206, 30.4%, 95.5%);
-  --control-placeholder-color: hsl(208, 10%, 67%);
+  --control-background-color: hsl(var(--color-grey), 95%);
+  --control-placeholder-color: hsl(var(--color-grey), 75%);
+  --control-color: hsl(var(--color-grey), 30%);
   --control-font-weight: var(--font-weight-semibold);
 
   -moz-appearance: none;
@@ -21,6 +22,7 @@
   box-shadow: none;
   display: inline-flex;
   font-size: var(--font-size-normal);
+  font-weight: var(--control-font-weight);
   height: var(--control-height);
   justify-content: flex-start;
   line-height: var(--control-line-height);
@@ -31,6 +33,7 @@
   position: relative;
   vertical-align: top;
   background-color: var(--control-background-color);
+  color: var(--control-color);
 }
 
 .control::placeholder {
@@ -42,6 +45,16 @@
 .control:active,
 .control.is-active {
   outline: none;
+}
+
+.control:hover,
+.control.is-hovered {
+  --control-background-color: hsl(var(--color-grey), 92%);
+}
+
+.control:active,
+.control.is-active {
+  --control-background-color: hsl(var(--color-grey), 90%);
 }
 
 .control[disabled],

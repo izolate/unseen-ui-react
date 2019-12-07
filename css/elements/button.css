@@ -1,5 +1,5 @@
 .button {
-  --button-color: var(--color);
+  --button-color: var(--control-color);
   --button-background-color: var(--control-background-color);
   --button-border-color: var(--border-color);
   --button-border-width: var(--control-border-width);
@@ -26,10 +26,12 @@
   white-space: nowrap;
 }
 
-.button.is-full-width {
-  display: flex;
-  width: 100%;
+/*
+.button:hover,
+.button.is-hovered {
+  --button-background-color: var(--control-background-color-hovered);
 }
+*/
 
 /* Primary button */
 
@@ -40,7 +42,7 @@
 }
 
 .button.is-primary:hover,
-.button.is-primary.is-hover {
+.button.is-primary.is-hovered {
   --button-background-color: hsl(var(--color-primary), 48%);
   --button-border-color: hsl(var(--color-primary), 48%);
 }
@@ -60,7 +62,7 @@
 }
 
 .button.is-success:hover,
-.button.is-success.is-hover {
+.button.is-success.is-hovered {
   --button-background-color: hsl(var(--color-success), 48%);
   --button-border-color: hsl(var(--color-success), 48%);
 }
@@ -81,7 +83,7 @@
 }
 
 .button.is-warning:hover,
-.button.is-warning.is-hover {
+.button.is-warning.is-hovered {
   --button-background-color: hsl(var(--color-warning), 60%);
   --button-border-color: hsl(var(--color-warning), 60%);
 }
@@ -101,7 +103,7 @@
 }
 
 .button.is-danger:hover,
-.button.is-danger.is-hover {
+.button.is-danger.is-hovered {
   --button-background-color: hsl(var(--color-danger), 56%);
   --button-border-color: hsl(var(--color-danger), 56%);
 }
@@ -112,12 +114,19 @@
   --button-border-color: hsl(var(--color-danger), 51%);
 }
 
+/* Other buttons */
+
+.button.is-full-width {
+  display: flex;
+  width: 100%;
+}
+
 .button.is-rounded {
   --button-border-radius: var(--border-radius-rounded);
 }
 
 .button.is-filled {
-  --button-color: var(--color-white);
+  --button-color: hsl(var(--color-white), 100%);
 }
 
 .button.is-outlined,
