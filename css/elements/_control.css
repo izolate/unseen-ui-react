@@ -31,10 +31,21 @@
   position: relative;
   vertical-align: top;
   background-color: var(--control-background-color);
+  transition: transform 0.1s linear;
 }
 
 .control::placeholder {
   color: var(--control-placeholder-color);
+}
+
+.control:hover,
+.control.is-hovered {
+  transform: translateY(-1px);
+}
+
+.control:active,
+.control.is-active {
+  transform: translateY(0px);
 }
 
 .control:focus,
