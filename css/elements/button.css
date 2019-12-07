@@ -85,12 +85,12 @@
 
 .button.is-success.is-outlined:hover,
 .button.is-success.is-outlined.is-hovered {
-  --button-background-color: hsl(var(--color-success), 96%);
+  --button-background-color: hsl(var(--color-success), 95%);
 }
 
 .button.is-success.is-outlined:active,
 .button.is-success.is-outlined.is-active {
-  --button-background-color: hsl(var(--color-success), 94%);
+  --button-background-color: hsl(var(--color-success), 90%);
 }
 
 .button.is-success:focus,
@@ -121,12 +121,12 @@
 
 .button.is-warning.is-outlined:hover,
 .button.is-warning.is-outlined.is-hovered {
-  --button-background-color: hsl(var(--color-warning), 96%);
+  --button-background-color: hsl(var(--color-warning), 95%);
 }
 
 .button.is-warning.is-outlined:active,
 .button.is-warning.is-outlined.is-active {
-  --button-background-color: hsl(var(--color-warning), 93%);
+  --button-background-color: hsl(var(--color-warning), 90%);
 }
 
 .button.is-warning:focus,
