@@ -1,0 +1,45 @@
+.control {
+  --control-border-style: var(--border-style);
+  --control-border-width: var(--border-width);
+  --control-border-radius: var(--border-radius);
+  --control-border-color: var(--border-color);
+  --control-height: 3em;
+  --control-line-height: 1.5;
+  --control-padding-x: calc(0.5em - var(--control-border-width));
+  --control-padding-y: calc(0.5em - var(--control-border-width));
+
+  --control-background-color: hsl(206, 30.4, 95.5);
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border-width: var(--control-border-width);
+  border-style: var(--control-border-style);
+  border-radius: var(--control-border-radius);
+  border-color: var(--control-border-color);
+  box-shadow: none;
+  display: inline-flex;
+  font-size: var(--font-size-normal);
+  height: var(--control-height);
+  justify-content: flex-start;
+  line-height: var(--control-line-height);
+  padding-bottom: var(--control-padding-y);
+  padding-left: var(--control-padding-x);
+  padding-right: var(--control-padding-x);
+  padding-top: var(--control-padding-y);
+  position: relative;
+  vertical-align: top;
+  background-color: var(--control-background-color);
+}
+
+.control:focus,
+.control.is-focused,
+.control:active,
+.control.is-active {
+  outline: none;
+}
+
+.control[disabled],
+fieldset[disabled] .control {
+  cursor: not-allowed;
+}
