@@ -31,12 +31,24 @@
   width: 100%;
 }
 
+/* Primary button */
 .button.is-primary {
-  --button-background-color: var(--color-primary);
-  --button-border-color: var(--color-primary);
-  --button-color: var(--color-primary);
+  --button-background-color: hsl(var(--color-primary), 53%);
+  --button-border-color: hsl(var(--color-primary), 53%);
+  --button-color: hsl(var(--color-primary), 53%);
 }
 
+.button.is-primary:hover,
+.button.is-primary.is-hover {
+  --button-background-color: hsl(var(--color-primary), 48%);
+}
+
+.button.is-primary:active,
+.button.is-primary.is-active {
+  --button-background-color: hsl(var(--color-primary), 43%);
+}
+
+/* Success button */
 .button.is-success {
   --button-background-color: var(--color-success);
   --button-border-color: var(--color-success);

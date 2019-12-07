@@ -1,7 +1,7 @@
 :root {
   /* Colors */
   --color-white: hsl(0, 0%, 100%);
-  --color-primary: hsl(217, 71%, 53%);
+  --color-primary: 217, 71%; /* l:53% */
   --color-success: hsl(141, 53%, 53%);
   --color-warning: hsl(48, 100%, 67%);
   --color-warning-text: hsl(48, 100%, 35%);
