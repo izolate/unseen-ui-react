@@ -3,9 +3,8 @@
   --color-white: hsl(0, 0%, 100%);
   --color-primary: 217, 71%; /* l:53% */
   --color-success: 141, 53%; /* l:53% */
-  --color-warning: hsl(48, 100%, 67%);
-  --color-warning-text: hsl(48, 100%, 35%);
-  --color-danger: hsl(348, 86%, 61%);
+  --color-warning: 48, 100%; /* l:67% */
+  --color-danger: 348, 86%; /* l:61%) */
 
   --background-color: transparent;
 

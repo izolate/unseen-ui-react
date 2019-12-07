@@ -42,11 +42,13 @@
 .button.is-primary:hover,
 .button.is-primary.is-hover {
   --button-background-color: hsl(var(--color-primary), 48%);
+  --button-border-color: hsl(var(--color-primary), 48%);
 }
 
 .button.is-primary:active,
 .button.is-primary.is-active {
   --button-background-color: hsl(var(--color-primary), 43%);
+  --button-border-color: hsl(var(--color-primary), 43%);
 }
 
 /* Success button */
@@ -60,24 +62,54 @@
 .button.is-success:hover,
 .button.is-success.is-hover {
   --button-background-color: hsl(var(--color-success), 48%);
+  --button-border-color: hsl(var(--color-success), 48%);
 }
 
 .button.is-success:active,
 .button.is-success.is-active {
   --button-background-color: hsl(var(--color-success), 43%);
+  --button-border-color: hsl(var(--color-success), 43%);
 }
+
+/* Warning button */
 
 .button.is-warning {
-  --button-background-color: var(--color-warning);
-  --button-border-color: var(--color-warning);
+  --button-background-color: hsl(var(--color-warning), 67%);
+  --button-border-color: hsl(var(--color-warning), 67%);
   /* Warning color is too light for white text */
-  --button-color: var(--color-warning-text) !important;
+  --button-color: hsl(var(--color-warning), 35%) !important;
 }
 
+.button.is-warning:hover,
+.button.is-warning.is-hover {
+  --button-background-color: hsl(var(--color-warning), 60%);
+  --button-border-color: hsl(var(--color-warning), 60%);
+}
+
+.button.is-warning:active,
+.button.is-warning.is-active {
+  --button-background-color: hsl(var(--color-warning), 55%);
+  --button-border-color: hsl(var(--color-warning), 55%);
+}
+
+/* Danger button */
+
 .button.is-danger {
-  --button-background-color: var(--color-danger);
-  --button-border-color: var(--color-danger);
-  --button-color: var(--color-danger);
+  --button-background-color: hsl(var(--color-danger), 61%);
+  --button-border-color: hsl(var(--color-danger), 61%);
+  --button-color: hsl(var(--color-danger), 61%);
+}
+
+.button.is-danger:hover,
+.button.is-danger.is-hover {
+  --button-background-color: hsl(var(--color-danger), 56%);
+  --button-border-color: hsl(var(--color-danger), 56%);
+}
+
+.button.is-danger:active,
+.button.is-danger.is-active {
+  --button-background-color: hsl(var(--color-danger), 51%);
+  --button-border-color: hsl(var(--color-danger), 51%);
 }
 
 .button.is-rounded {
