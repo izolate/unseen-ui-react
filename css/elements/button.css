@@ -32,6 +32,7 @@
 }
 
 /* Primary button */
+
 .button.is-primary {
   --button-background-color: hsl(var(--color-primary), 53%);
   --button-border-color: hsl(var(--color-primary), 53%);
@@ -49,10 +50,21 @@
 }
 
 /* Success button */
+
 .button.is-success {
-  --button-background-color: var(--color-success);
-  --button-border-color: var(--color-success);
-  --button-color: var(--color-success);
+  --button-background-color: hsl(var(--color-success), 53%);
+  --button-border-color: hsl(var(--color-success), 53%);
+  --button-color: hsl(var(--color-success), 53%);
+}
+
+.button.is-success:hover,
+.button.is-success.is-hover {
+  --button-background-color: hsl(var(--color-success), 48%);
+}
+
+.button.is-success:active,
+.button.is-success.is-active {
+  --button-background-color: hsl(var(--color-success), 43%);
 }
 
 .button.is-warning {
@@ -76,6 +88,8 @@
   --button-color: var(--color-white);
 }
 
-.button.is-outlined {
+.button.is-outlined,
+.button.is-outlined:hover,
+.button.is-outlined.is-hovered {
   --button-background-color: var(--color-white);
 }
