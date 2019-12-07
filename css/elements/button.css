@@ -1,3 +1,5 @@
+/* === Default button === */
+
 .button {
   --button-color: var(--control-color);
   --button-background-color: var(--control-background-color);
@@ -26,14 +28,7 @@
   white-space: nowrap;
 }
 
-/*
-.button:hover,
-.button.is-hovered {
-  --button-background-color: var(--control-background-color-hovered);
-}
-*/
-
-/* Primary button */
+/* === Primary button === */
 
 .button.is-primary {
   --button-background-color: hsl(var(--color-primary), 53%);
@@ -53,17 +48,22 @@
   --button-border-color: hsl(var(--color-primary), 43%);
 }
 
-.button.is-outlined:hover,
-.button.is-outlined.is-hovered {
+.button.is-primary.is-outlined:hover,
+.button.is-primary.is-outlined.is-hovered {
   --button-background-color: hsl(var(--color-primary), 97%);
 }
 
-.button.is-outlined:active,
-.button.is-outlined.is-active {
+.button.is-primary.is-outlined:active,
+.button.is-primary.is-outlined.is-active {
   --button-background-color: hsl(var(--color-primary), 95%);
 }
 
-/* Success button */
+.button.is-primary:focus,
+.button.is-primary.is-focused {
+  box-shadow: 0 0 0 3px hsl(var(--color-primary), 90%);
+}
+
+/* === Success button === */
 
 .button.is-success {
   --button-background-color: hsl(var(--color-success), 53%);
@@ -93,7 +93,12 @@
   --button-background-color: hsl(var(--color-success), 94%);
 }
 
-/* Warning button */
+.button.is-success:focus,
+.button.is-success.is-focused {
+  box-shadow: 0 0 0 3px hsl(var(--color-success), 90%);
+}
+
+/* === Warning button === */
 
 .button.is-warning {
   --button-background-color: hsl(var(--color-warning), 67%);
@@ -124,7 +129,12 @@
   --button-background-color: hsl(var(--color-warning), 93%);
 }
 
-/* Danger button */
+.button.is-warning:focus,
+.button.is-warning.is-focused {
+  box-shadow: 0 0 0 3px hsl(var(--color-warning), 90%);
+}
+
+/* === Danger button === */
 
 .button.is-danger {
   --button-background-color: hsl(var(--color-danger), 61%);
@@ -154,7 +164,12 @@
   --button-background-color: hsl(var(--color-danger), 95%);
 }
 
-/* Other buttons */
+.button.is-danger:focus,
+.button.is-danger.is-focused {
+  box-shadow: 0 0 0 3px hsl(var(--color-danger), 93%);
+}
+
+/* === Other buttons === */
 
 .button.is-full-width {
   display: flex;

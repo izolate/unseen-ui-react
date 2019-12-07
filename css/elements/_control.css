@@ -52,6 +52,11 @@
   --control-background-color: hsl(var(--color-grey), 92%);
 }
 
+.control:focus,
+.control.is-focused {
+  --control-background-color: hsl(var(--color-grey), 92%);
+}
+
 .control:active,
 .control.is-active {
   --control-background-color: hsl(var(--color-grey), 90%);
