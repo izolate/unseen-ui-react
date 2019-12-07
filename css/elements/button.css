@@ -53,6 +53,16 @@
   --button-border-color: hsl(var(--color-primary), 43%);
 }
 
+.button.is-outlined:hover,
+.button.is-outlined.is-hovered {
+  --button-background-color: hsl(var(--color-primary), 97%);
+}
+
+.button.is-outlined:active,
+.button.is-outlined.is-active {
+  --button-background-color: hsl(var(--color-primary), 95%);
+}
+
 /* Success button */
 
 .button.is-success {
@@ -71,6 +81,16 @@
 .button.is-success.is-active {
   --button-background-color: hsl(var(--color-success), 43%);
   --button-border-color: hsl(var(--color-success), 43%);
+}
+
+.button.is-success.is-outlined:hover,
+.button.is-success.is-outlined.is-hovered {
+  --button-background-color: hsl(var(--color-success), 96%);
+}
+
+.button.is-success.is-outlined:active,
+.button.is-success.is-outlined.is-active {
+  --button-background-color: hsl(var(--color-success), 94%);
 }
 
 /* Warning button */
@@ -94,6 +114,16 @@
   --button-border-color: hsl(var(--color-warning), 55%);
 }
 
+.button.is-warning.is-outlined:hover,
+.button.is-warning.is-outlined.is-hovered {
+  --button-background-color: hsl(var(--color-warning), 96%);
+}
+
+.button.is-warning.is-outlined:active,
+.button.is-warning.is-outlined.is-active {
+  --button-background-color: hsl(var(--color-warning), 93%);
+}
+
 /* Danger button */
 
 .button.is-danger {
@@ -114,6 +144,16 @@
   --button-border-color: hsl(var(--color-danger), 51%);
 }
 
+.button.is-danger.is-outlined:hover,
+.button.is-danger.is-outlined.is-hovered {
+  --button-background-color: hsl(var(--color-danger), 97%);
+}
+
+.button.is-danger.is-outlined:active,
+.button.is-danger.is-outlined.is-active {
+  --button-background-color: hsl(var(--color-danger), 95%);
+}
+
 /* Other buttons */
 
 .button.is-full-width {
@@ -129,8 +169,6 @@
   --button-color: hsl(var(--color-white), 100%);
 }
 
-.button.is-outlined,
-.button.is-outlined:hover,
-.button.is-outlined.is-hovered {
-  --button-background-color: var(--color-white);
+.button.is-outlined {
+  --button-background-color: hsl(var(--color-white), 100%);
 }
